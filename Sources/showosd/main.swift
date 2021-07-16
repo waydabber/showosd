@@ -4,12 +4,18 @@ import Foundation
 var helptext: String = """
 Usage examples:
             
-showosd - Shows an empty OSD (with or without a value depending on last usage)
-showosd brightness 40 - shows a brightness OSD at level 40 (out of 100)
-showosd volume 60 - shows a volume OSD at level 60 (out of 100)
-showosd mute 0 primary - shows an OSD of muted symbol on the primary display only
-showosd keylight lock - shows a locked keyboard birghtness symbol
-showosd volume - shows volume with the last set value
+showosd - Shows an empty OSD (not very useful)
+showosd brightness 40 - Shows brightness OSD at level 40 (out of 100)
+showosd volume 60 - Shows volume OSD at level 60 (out of 100)
+showosd volume - Shows volume with the last set value
+showosd volume 4 16 - Volume OSD as 4 chiclets full out of the total possible 16
+showosd brightness 15 64 - Shows voume OSD as 3 and 3/4 chiclets full
+showosd mute 0 primary - Shows volume muted symbol on the primary display only
+showosd keylight lock - Shows a locked keyboard birghtness symbol
+showosd eject - Eject
+showosd link - Shows link icon
+showosd sleep - Shows a sleep icon and then initiates sleep ..zZz
+
 """
 
 var displayCount: UInt32 = 0
@@ -18,6 +24,7 @@ let err = CGGetOnlineDisplayList(16, &onlineDisplays, &displayCount)
 let displayIDs = onlineDisplays.prefix(Int(displayCount))
 var osdImage: Int64 = 0
 var value: UInt32 = 50
+var outof: UInt32 = 100
 var locked: Bool = false
 var novalue: Bool = true
 var primary: Bool = false
@@ -53,13 +60,25 @@ for argument in CommandLine.arguments {
         default:
            
         if let intValue = Int(argument) {
-            value=UInt32(intValue)
-            novalue = false
+
+            if (i==0) {
+
+                value=UInt32(intValue)
+                novalue = false
+                i=1
+                
+            } else {
+                
+                outof=UInt32(intValue)
+                
+            }
         }
            
     }
     
 }
+
+i=0
 
 for id in displayIDs {
 
@@ -84,7 +103,7 @@ for id in displayIDs {
                 priority: 0x1F4,
                 msecUntilFade: 1500,
                 filledChiclets: value,
-                totalChiclets: 100,
+                totalChiclets: outof,
                 locked: locked
             )
         

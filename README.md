@@ -17,16 +17,16 @@ See the built app in the `.build/release` folder afterwards. Don't forget to ins
 ## Usage examples:
             
 `showosd` - Shows an empty OSD (not very useful)
-
 `showosd brightness 40` - Shows brightness OSD at level 40 (out of 100)
-
 `showosd volume 60` - Shows volume OSD at level 60 (out of 100)
-
-`showosd mute 0 primary` - Shows volume muted symbol on the *primary display* only
-
-`showosd keylight lock` - Shows a locked keyboard birghtness symbol
-
 `showosd volume` - Shows volume with the last set value
+`showosd volume 4 16` - Volume OSD as 4 chiclets full out of the total possible 16
+`showosd brightness 15 64` - Shows voume OSD as 3 and 3/4 chiclets full
+`showosd mute 0 primary` - Shows volume muted symbol on the primary display only
+`showosd keylight lock` - Shows a locked keyboard birghtness symbol
+`showosd eject` - Eject
+`showosd link` - Shows link icon
+`showosd sleep` - Shows a sleep icon and then initiates sleep ..zZz
 
 ## Yamaha AV Control
 

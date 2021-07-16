@@ -8,7 +8,7 @@ https://gist.github.com/waydabber/3241fc146cef65131a42ce30e4b6eab7
 
 After downloading, to build, enter:
 
-make release
+    make release
 
 See the built app in the .build/release folder afterwards. Don't forget to install XCode beforehand!
 
@@ -16,12 +16,12 @@ See the built app in the .build/release folder afterwards. Don't forget to insta
 
 Usage examples:
             
-showosd - Shows an empty OSD (with or without a value depending on last usage)
-showosd brightness 40 - shows a brightness OSD at level 40 (out of 100)
-showosd volume 60 - shows a volume OSD at level 60 (out of 100)
-showosd mute 0 primary - shows an OSD of muted symbol on the primary display only
-showosd keylight lock - shows a locked keyboard birghtness symbol
-showosd volume - shows volume with the last set value
+    showosd - Shows an empty OSD (with or without a value depending on last usage)
+    showosd brightness 40 - shows a brightness OSD at level 40 (out of 100)
+    showosd volume 60 - shows a volume OSD at level 60 (out of 100)
+    showosd mute 0 primary - shows an OSD of muted symbol on the primary display only
+    showosd keylight lock - shows a locked keyboard birghtness symbol
+    showosd volume - shows volume with the last set value
 
 ---
 

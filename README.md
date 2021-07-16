@@ -38,6 +38,6 @@ https://gist.github.com/waydabber/3241fc146cef65131a42ce30e4b6eab7
 
 ## Thanks
 
-Thanks to @alin23 for all the help!
+Thanks to [@alin23](https://github.com/alin23) for all the help!
 
 Enjoy!

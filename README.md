@@ -16,13 +16,13 @@ See the built app in the `.build/release` folder afterwards. Don't forget to ins
 
 ## Usage examples:
             
-`showosd` - Shows an empty OSD (with or without a value depending on last usage)
+`showosd` - Shows an empty OSD (not very useful)
 
-`showosd brightness 40` - Shows a brightness OSD at level 40 (out of 100)
+`showosd brightness 40` - Shows brightness OSD at level 40 (out of 100)
 
-`showosd volume 60` - Shows a volume OSD at level 60 (out of 100)
+`showosd volume 60` - Shows volume OSD at level 60 (out of 100)
 
-`showosd mute 0 primary` - Shows an OSD of muted symbol on the *primary display* only (normally defaults to all displays)
+`showosd mute 0 primary` - Shows volume muted symbol on the *primary display* only
 
 `showosd keylight lock` - Shows a locked keyboard birghtness symbol
 

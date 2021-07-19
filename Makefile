@@ -4,8 +4,6 @@ vpath %.swift Sources
 	swift build \
 	    -Xswiftc -F$$PWD/Sources \
 	    -Xswiftc -F/System/Library/PrivateFrameworks \
-	    -Xswiftc -framework -Xswiftc DisplayServices \
-	    -Xswiftc -framework -Xswiftc CoreDisplay \
 	    -Xswiftc -framework -Xswiftc OSD \
 	    -Xswiftc -import-objc-header -Xswiftc Sources/Bridging-Header.h
 
@@ -14,8 +12,6 @@ vpath %.swift Sources
 		-c release \
 	    -Xswiftc -F$$PWD/Sources \
 	    -Xswiftc -F/System/Library/PrivateFrameworks \
-	    -Xswiftc -framework -Xswiftc DisplayServices \
-	    -Xswiftc -framework -Xswiftc CoreDisplay \
 	    -Xswiftc -framework -Xswiftc OSD \
 	    -Xswiftc -import-objc-header -Xswiftc Sources/Bridging-Header.h
 

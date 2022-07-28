@@ -42,7 +42,7 @@ See the built app in the `.build/release` folder afterwards. Don't forget to ins
 
 Check out the following [hammerspoon](https://github.com/Hammerspoon/hammerspoon) script. 
 
-This script allows you to control the volume of your external Display' brightness, contrast and volume via DDC (if you use an M1 Mac) using [m1ddc](https://github.com/waydabber/m1ddc) and also control your Yamaha AV Receiver through network. The script listens to the standard Apple keyboard media keys and shos the standard macOS Birghtness and Volume OSDs via uses [showosd](https://github.com/waydabber/showosd) :
+This script allows you to control the volume of your external Display's brightness, contrast and volume via DDC (if you use an M1 Mac) using [m1ddc](https://github.com/waydabber/m1ddc) and also control your Yamaha AV Receiver through network. The script listens to the standard Apple keyboard media keys and shos the standard macOS Birghtness and Volume OSDs via uses [showosd](https://github.com/waydabber/showosd) :
 
 https://gist.github.com/waydabber/3241fc146cef65131a42ce30e4b6eab7
 
